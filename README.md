@@ -33,5 +33,5 @@ ls ~/
 
 ### remote update nix (nixos-rebuild) on cluster head
 ```
-nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster?ref=main#_9a7e67 -- --ssh-user giezac --hostname 10.0.85.10
+nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster?ref=main#_9a7e67 -- --ssh-user giezac --hostname 10.0.83.10
 ```
