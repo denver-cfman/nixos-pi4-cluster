@@ -22,12 +22,12 @@ nix flake show --all-systems --json github:denver-cfman/nixos-pi4-cluster?ref=ma
 
 ### build sd image for cluster head, use ` nix flake show github:denver-cfman/nixos-pi4-cluster?ref=main ` to list nodes
 ```
-nix build --rebuild -L github:denver-cfman/nixos-pi4-cluster?ref=main#nixosConfigurations._9a7e67.config.system.build.sdImage
+nix build --rebuild -L github:denver-cfman/nixos-pi4-cluster?ref=main#nixosConfigurations._9a7e6755.config.system.build.sdImage
 ```
 
 ### copy sd image
 ```
-cp result/sd-images/9a7e67.img ~/
+cp result/sd-images/9a7e6755.img ~/
 ls ~/
 ```
 
