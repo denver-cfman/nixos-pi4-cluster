@@ -12,17 +12,17 @@
 ---
 ### check this flake
 ```
-nix flake check -v -L --no-build github:denver-cfman/nixos-pi4-cluster?ref=main
+nix flake check -v -L --no-build github:denver-cfman/nixos-pi4-cluster
 ```
 
 ### show this flake
 ```
-nix flake show --all-systems --json github:denver-cfman/nixos-pi4-cluster?ref=main |jq '.'
+nix flake show --all-systems --json github:denver-cfman/nixos-pi4-cluster |jq '.'
 ```
 
 ### build sd image for cluster head, use ` nix flake show github:denver-cfman/nixos-pi4-cluster?ref=main ` to list nodes
 ```
-nix build --rebuild -L github:denver-cfman/nixos-pi4-cluster?ref=main#nixosConfigurations._9a7e6755.config.system.build.sdImage
+nix build --rebuild -L github:denver-cfman/nixos-pi4-cluster#nixosConfigurations._9a7e6755.config.system.build.sdImage
 ```
 
 ### copy sd image
@@ -33,5 +33,5 @@ ls ~/
 
 ### remote update nix (nixos-rebuild) on cluster head
 ```
-nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster?ref=main#_9a7e67 -- --ssh-user giezac --hostname 10.0.83.10
+nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster#_9a7e6755 -- --ssh-user giezac --hostname 10.0.83.10
 ```
