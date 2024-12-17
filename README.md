@@ -27,8 +27,8 @@ nix build --rebuild -L github:denver-cfman/nixos-pi4-cluster#nixosConfigurations
 
 ### copy sd image
 ```
-cp result/sd-images/9a7e6755.img ~/
-ls ~/
+sudo cp result/sd-image/*.img /tmp/desktop/
+ls /tmp/desktop/
 ```
 
 ### remote update nix (nixos-rebuild) on cluster head
