@@ -35,3 +35,8 @@ ls /tmp/desktop/
 ```
 nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster#_9a7e6755 -- --ssh-user giezac --hostname 10.0.83.10
 ```
+---
+#### or local
+```
+nix run github:serokell/deploy-rs github:denver-cfman/nixos-pi4-cluster#_9a7e6755 --extra-experimental-features "flakes nix-command"
+```
