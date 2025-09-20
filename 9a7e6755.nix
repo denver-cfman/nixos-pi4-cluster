@@ -41,6 +41,7 @@
     k3s_1_26
   ];
 
+  /*
   services.k3s = {
     enable = true;
     extraFlags = "--disable=servicelb --tls-san=rpi4-cluster-head.giezenconsulting.com --advertise-address=10.0.83.10 --bind-address=10.0.83.10 --write-kubeconfig-mode=644";
@@ -48,5 +49,6 @@
     token = "mytoken";
     #disableAgent = "false";
   };
+  */
 
 }
