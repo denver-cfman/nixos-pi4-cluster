@@ -26,7 +26,7 @@
     hostName = "9a7e6755";
     hosts = {
       "127.0.0.1" = [ "9a7e6755.local" ];
-      "10.0.85.30" = [ "9a7e6755.local" ];
+      "10.0.83.10" = [ "9a7e6755.local" ];
     };
     firewall.enable = false;
     firewall.allowedTCPPorts = [ 6443 22 ];
@@ -43,7 +43,7 @@
 
   services.k3s = {
     enable = true;
-    extraFlags = "--disable=servicelb --tls-san=rpi4-cluster-head.giezenconsulting.com --advertise-address=10.0.85.30 --bind-address=10.0.85.30 --write-kubeconfig-mode=644";
+    extraFlags = "--disable=servicelb --tls-san=rpi4-cluster-head.giezenconsulting.com --advertise-address=10.0.83.10 --bind-address=10.0.83.10 --write-kubeconfig-mode=644";
     role = "server";
     token = "mytoken";
     #disableAgent = "false";
