@@ -26,7 +26,7 @@
     hostName = "9a7e6755";
     hosts = {
       "127.0.0.1" = [ "9a7e6755.local" ];
-      "10.0.83.10" = [ "9a7e6755.local" ];
+      "10.0.83.10" = [ "9a7e6755.local" "rpi4-cluster-head" "rpi4-cluster-head.giezenconsulting.com" ];
     };
     firewall.enable = false;
     firewall.allowedTCPPorts = [ 6443 22 ];
