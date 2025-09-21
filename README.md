@@ -33,6 +33,11 @@ ls /tmp/desktop/
 
 ### remote update nix (nixos-rebuild) on cluster head
 ```
+nixos-rebuild switch --no-write-lock-file --refresh --impure --flake github:denver-cfman/nixos-pi4-cluster?ref=main#_9a7e6755 --use-remote-sudo --target-hos
+t giezac@10.0.83.10
+```
+### remote update deploy-rs
+```
 nix run github:serokell/deploy-rs --no-write-lock-file --refresh --impure github:denver-cfman/nixos-pi4-cluster?ref=main#_9a7e6755 -- -s -d --ssh-user giezac --hostname 10.0.83.10
 ```
 ---
