@@ -151,6 +151,7 @@ in
     libraspberrypi
     raspberrypi-eeprom
     htop
+    btop
     vim
     k3s
     k3d
