@@ -39,14 +39,14 @@
     vim
     k3s_1_26
   ];
-
+  /*
   services.k3s = {
     enable = true;
-    token = "K109225314c2362ddcf00d33e670e2cb09150ca11226f469c52c89d1b7ee4bd3a9c::server:mytoken";
+    token = "K10432a5b01d4e99869adcaebe756a9a4ad476fb4b7e951138e56cd536ca6b74389::server:mytoken";
     role = "agent";
     serverAddr="https://rpi4-cluster-head.giezenconsulting.com:6443";
     #extraFlags = "--disable=servicelb";
     #disableAgent = "false";
   };
-
+  */
 }
