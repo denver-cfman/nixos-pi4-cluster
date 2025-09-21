@@ -161,5 +161,15 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  /*
+  services.journald = {
+    enable = true;
+    extraConfig = ''
+      ForwardToSyslog = yes
+      RemoteSyslog = 192.168.1.10:514
+      RemoteSyslogProtocol = udp
+    '';
+  };
+  */
 
 }
