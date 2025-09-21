@@ -45,7 +45,7 @@
     token = "K10432a5b01d4e99869adcaebe756a9a4ad476fb4b7e951138e56cd536ca6b74389::server:mytoken";
     role = "agent";
     serverAddr="https://rpi4-cluster-head.giezenconsulting.com:6443";
-    extraFlags = "--disable=servicelb";
+    #extraFlags = "--disable=servicelb";
     #disableAgent = "false";
   };
 
