@@ -26,7 +26,7 @@
     hostName = "9a7e6755";
     hosts = {
       "127.0.0.1" = [ "9a7e6755.local" ];
-      "10.0.83.10" = [ "9a7e6755.local" ];
+      "10.0.83.10" = [ "9a7e6755.local" "rpi4-cluster-head" "rpi4-cluster-head.giezenconsulting.com" ];
     };
     firewall.enable = false;
     firewall.allowedTCPPorts = [ 6443 22 ];
@@ -38,10 +38,12 @@
     raspberrypi-eeprom
     htop
     vim
-    k3s_1_26
+    k3s
+    k3d
+    k9s 
   ];
 
-  /*
+  
   services.k3s = {
     enable = true;
     extraFlags = "--disable=servicelb --tls-san=rpi4-cluster-head.giezenconsulting.com --advertise-address=10.0.83.10 --bind-address=10.0.83.10 --write-kubeconfig-mode=644";
@@ -49,6 +51,6 @@
     token = "mytoken";
     #disableAgent = "false";
   };
-  */
+  
 
 }

@@ -151,13 +151,25 @@ in
     libraspberrypi
     raspberrypi-eeprom
     htop
+    btop
     vim
-    k3s_1_26
+    k3s
+    k3d
     python310
   ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  /*
+  services.journald = {
+    enable = true;
+    extraConfig = ''
+      ForwardToSyslog = yes
+      RemoteSyslog = 192.168.1.10:514
+      RemoteSyslogProtocol = udp
+    '';
+  };
+  */
 
 }
