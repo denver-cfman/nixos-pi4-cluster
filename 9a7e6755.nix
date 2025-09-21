@@ -38,7 +38,8 @@
     raspberrypi-eeprom
     htop
     vim
-    k3s_1_26
+    k3s
+    k3d
   ];
 
   
