@@ -39,7 +39,7 @@
     vim
     k3s
   ];
-  /*
+  
   services.k3s = {
     enable = true;
     token = "K10432a5b01d4e99869adcaebe756a9a4ad476fb4b7e951138e56cd536ca6b74389::server:mytoken";
@@ -48,5 +48,5 @@
     extraFlags = "--disable=servicelb";
     #disableAgent = "false";
   };
-*/
+
 }
